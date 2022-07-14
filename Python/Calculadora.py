@@ -1,12 +1,14 @@
-def calculadora(n1,n2):
-    soma = n1 + n2
-    sub = n1 - n2
-    multi = n1 % n2
-    divi = n1 / n2
+def calculadora(x, y):
+    soma = x + y
+    sub = x - y
+    multi = x * y
+    divi = x / y
     return (soma, sub, multi, divi)
-n1 = 2
-n2 = 10
-print(calculadora(n1,n2))
+
+x = 4
+y = 2
+
+print(calculadora(x, y))
 
 
 
