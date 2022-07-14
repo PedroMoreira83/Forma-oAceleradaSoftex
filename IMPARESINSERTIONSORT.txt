@@ -1,0 +1,58 @@
+Algoritmo "ImparesInsertionSort"
+
+Var
+veti: vetor[0..30] de inteiro
+a, p, x: inteiro
+par, impar: inteiro
+
+
+Inicio
+
+veti [1] <-59
+veti [2] <-57
+veti [3] <-55
+veti [4] <-23
+veti [5] <-9
+veti [6] <-11
+veti [7] <-37
+veti [8] <-15
+veti [9] <-17
+veti [10] <-19
+veti [11] <-21
+veti [12] <-7
+veti [13] <-25
+veti [14] <-27
+veti [15] <-29
+veti [16] <-31
+veti [17] <-33
+veti [18] <-35
+veti [19] <-13
+veti [20] <-39
+veti [21] <-41
+veti [22] <-43
+veti [23] <-45
+veti [24] <-47
+veti [25] <-49
+veti [26] <-51
+veti [27] <-53
+veti [28] <-5
+veti [29] <-3
+veti [30] <-1
+
+Para a <-1 até 30 faca
+    para a de 2 até 30 faca
+         x <- veti[a]
+         p <- a-1
+         enquanto (x < veti[p]) faca
+                  veti[p+1] <- veti[p]
+                  p <- p-1
+         fimenquanto
+         veti[p+1] <- x
+    fimpara
+    para a de 1 ate 30 faca
+         escreval (veti[a])
+    fimpara
+Fimpara
+
+
+Fimalgoritmo

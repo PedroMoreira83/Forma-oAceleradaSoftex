@@ -1,0 +1,90 @@
+CRIAÇÃO DE ALGORITMOS (TipoTransporte)
+
+Algoritimo “AdivinharTransporte”
+
+Var
+	resposta: lógico
+Início
+escreva (“Seu transporte é terrestre?" )
+leia (resposta)
+	Se boolean = “Sim” entao 
+	Escreval ("Cabe apenas uma pessoa?" )
+	leia (resposta)	
+		Se boolean = “Sim” entao 
+		Escreval ("É pesado? ")
+		leia (resposta)
+			Se boolean = “Sim” entao 
+			Escreval ("Seu veículo é um trator" )
+			Senao
+			Escreval ("Tem Pedal?" )
+				Se boolean = “Sim” entao 
+				Escreval ("Seu veículo é uma bicicleta" )
+				FimSe
+		Senao
+		Escreval ("Usa capacete? ")
+			Se boolean = “Sim” entao 
+			Escreval ("Seu veículo é uma moto" )
+			FimSe
+		FimSe
+	Senao
+	Escreval ("É aéreo?" )
+			Se boolean = “Sim” entao 
+			Escreval ("Precisa pula?" )
+				Se boolean = “Sim” entao 
+				Escreval ("Seu veículo é uma asa delta" )
+				FimSe
+			Senao
+			Escreval ("Viaja-se dentro?" )
+				Se boolean = “Sim” entao 
+				Escreval ("É lento?" )
+					Se boolean = “Sim” entao 
+					Escreval ("Seu veículo é um balão" )
+					FimSe
+				Senao
+					Escreval ("Tem piloto?" )
+						Se boolean = “Sim” entao 
+						Escreval ("Posui asas fixas?" )
+							Se boolean = “Sim” entao 
+							Escreval ("Seu veículo é um avião" )
+							FimSe
+						Senao
+							Escreval ("Faz voo vertical?" )
+								Se boolean = “Sim” entao 
+								Escreval ("Seu veículo é um helicóptero" )
+								FimSe 
+						FimSe
+					FimSe
+				FimSe
+			FimSe
+	Senao
+	Escreval ("É aquatico?" )
+		Se boolean = “Sim” entao 
+		Escreval ("Navega submerso?" )
+			Se boolean = “Sim” entao 
+			Escreval ("Seu veículo é um submarino" )
+			FimSe
+		Senao
+		Escreval ("Navega sobre as águas?" )
+			Se boolean = “Sim” entao 
+			Escreval ("Possui vela?" )
+				Se boolean = “Sim” entao 
+				Escreval ("Seu veículo é um barco" )
+				FimSe
+			Senao
+			Escreval ("Tem motor?" )
+				Se boolean = “Sim” entao 
+				Escreval ("É alto" )
+				Escreval ("Possui vela?" )
+					Se boolean = “Sim” entao 
+					Escreval ("Seu veículo é um Navio" )
+					FimSe
+				Senao
+				Escreval ("Pode ser descoberto?" )
+					Se boolean = “Sim” entao 
+					Escreval ("Seu veículo é uma lancha" )
+					FimSe
+				FimSe
+			FimSe 
+		FimSe
+	FimSe 
+FimAlgoritmo

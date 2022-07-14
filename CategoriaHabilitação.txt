@@ -1,0 +1,30 @@
+# Sistema Habilitação
+print('---------------------------------------------------')
+print(' Sistema de Verificação de Habilitação Recomendada ')
+print('---------------------------------------------------')
+print('')
+print('Este Sistema tem a função de ajudar o usuário a saber qual categoria '
+      'adequada que deverá tirar, dada as informações referentes a sua necessidade')
+print('')
+
+# Obrigar a pessoa a inserir um dado válido
+while True:
+    try:
+        rodas = int(input("Insira o número de rodas do seu veículo: "))
+        pessoas = int(input("Quantas pessoas pretende transportar? "))
+        peso = int(input('Qual o peso do veículo que irá dirigir (valor em kg)? '))
+    except ValueError:
+        print('Dado incorreto. Favor inserir número inteiro')
+    else:
+        break
+
+if rodas <= 3:
+    print('A habilitação que precisa tirar é a "A"')
+elif rodas == 4 and pessoas <= 8 and peso <= 3500:
+    print('A habilitação que precisa tirar é a "B"')
+elif rodas >= 4 and peso >= 3500 and peso <= 6000:
+    print('A habilitação que precisa tirar é a "C"')
+elif rodas >= 4 and pessoas > 8:
+    print('A habilitação que precisa tirar é a "D"')
+else:
+    print('A habilitação que precisa tirar é a "E"')

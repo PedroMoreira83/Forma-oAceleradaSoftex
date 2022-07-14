@@ -1,0 +1,32 @@
+Algoritmo "AnaliseVestibular"
+
+Var
+vaa: vetor[0..25] de caracter
+vnA: vetor[0..25] de real
+ta, tb, tc, td: inteiro
+tnA, tnB, tnC, tnD: inteiro
+MA, MB, mC, mD: real
+
+Inicio
+EscrevaL ("----------------------")
+EscrevaL ("  Análise da Turma A  ")
+EscrevaL ("----------------------")
+tnA <- 0
+Para vt <-1 até 4 faca
+     para
+Escreva ("Qual o seu nome? ")
+Leia (vaa[ta])
+Escreva ("Que nota tirou no vestibular? ")
+Leia (vnA[ta])
+MA <- vnA[tA]
+   Se (vnA[tA] >=7) e (vnA[tA] <=10) entao
+   tnA <- tnA +1
+   FimSe
+   para ta <- 1 ate 25 faca
+        Se vnA[tA] > MA entao
+        MA <- vnA[tA]
+        fimse
+   fimpara
+Fimpara
+Escreval ("Nesta turma", TnA," alunos foram aprovados e a maior nota foi ",MA,"")
+Fimalgoritmo

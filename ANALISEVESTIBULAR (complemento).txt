@@ -1,0 +1,42 @@
+Para conturma <-1 até 1 faca
+EscrevaL ("----------------------")
+EscrevaL ("  Análise da Turma B  ")
+EscrevaL ("----------------------")
+Escreva ("Qual o nome do aluno? ")
+Leia (aluno)
+Escreva ("Qual sua nota? ")
+Leia (nota)
+     Se nota >=7  então
+     Escreval ("Aprovado! ")
+     Senão
+     Escreval ("Tente novamente ano que vem! ")
+     FimSe
+Fimpara
+Para conturma <-1 até 1 faca
+EscrevaL ("----------------------")
+EscrevaL ("  Análise da Turma C  ")
+EscrevaL ("----------------------")
+Escreva ("Qual o nome do aluno? ")
+Leia (aluno)
+Escreva ("Qual sua nota? ")
+Leia (nota)
+     Se nota >=7  então
+     Escreval ("Aprovado! ")
+     Senão
+     Escreval ("Tente novamente ano que vem! ")
+     FimSe
+Fimpara
+Para conturma <-1 até 1 faca
+EscrevaL ("----------------------")
+EscrevaL ("  Análise da Turma D  ")
+EscrevaL ("----------------------")
+Escreva ("Qual o nome do aluno? ")
+Leia (aluno)
+Escreva ("Qual sua nota? ")
+Leia (nota)
+     Se nota >=7  então
+     Escreval ("Aprovado! ")
+     Senão
+     Escreval ("Tente novamente ano que vem! ")
+     FimSe
+Fimpara
