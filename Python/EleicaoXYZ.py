@@ -78,7 +78,7 @@ if __name__ == '__main__':  # funcao main
     candidato_z = 0
     voto_branco = 0
     voto_nulo = 0
-    voto_branco = 0
+
 
     print('-----------------------------')
     print(' Eleições Eletrônicas Python ')
