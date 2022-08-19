@@ -1,0 +1,9 @@
+O padrão escolhido foi o "observer".
+
+Esta escolha se deve pelo fato de que o JavaScript essencialmente é baseado neste padrão.
+Sua vantagem é não manter o sistema em looping, à espera de uma ocorrência. 
+No caso do padrão observer, quando o evento ocorrer, o sistema gerará a notificação 
+da ocorrência e assim o sistema estará sempre livre, para realizar outros eventos 
+em paralelo .
+Sua desvantagem está em um possível excesso de notificações e eventual impacto na performance
+do sistema.
