@@ -1,0 +1,11 @@
+Exemplos de dados no cotidiano:
+
+- Data/hora do calendário do sistema operacional (number);
+- Resultado de um teste de COVID (boolean);
+- Escolha da cor de um item que comprará numa e-shop (string).
+
+Demais exemplos na internet:
+
+- Informações inseridas no cadastro para compra na e-shop;
+- Número de documentação inserido para acesso ao sistema do laboratório;
+- Quantidade de likes em uma postagem em rede social.
