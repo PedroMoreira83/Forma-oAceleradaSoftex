@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 from typing import Type
-
 from CalculadoraInterativa import soma, sub, multi, divi
 
 
@@ -13,58 +12,6 @@ class Operations(ABC):
     @abstractmethod
     def execute(self):
         pass
-
-        class Soma(Operations):
-
-            def __init__(self, execute):
-                self.execute = execute
-
-            def somar(self, soma, x, y):
-                soma = x + y
-                print('')
-                print(f'A soma de {x} e {y} é {soma}')
-                print('')
-
-        class Subtracao(Operations):
-
-            def __init__(self, execute):
-                self.execute = execute
-
-            def subtrair(self, sub):
-                sub = x + y
-                print('')
-                print(f'A subtração de {x} e {y} é {sub}')
-                print('')
-
-        class Multiplicacao(Operations):
-
-            def __init__(self, execute):
-                self.execute = execute
-
-            def multiplicar(self, multi):
-                multi = x + y
-                print('')
-                print(f'A multiplicação de {x} e {y} é {multi}')
-                print('')
-
-        class Divisao(Operations):
-
-            def __init__(self, execute):
-                self.execute = execute
-
-            def dividir(self, divi):
-                divi = x + y
-                print('')
-                print(f'A divisão de {x} e {y} é {divi}')
-                print('')
-
-class Calculos:
-
-    def __init__(self, operacoes: Type[Operations]):
-        self.operacoes = operacoes
-
-    def calcular(self):
-        self.operacoes.execute()
 
 
 if __name__ == "main":
@@ -104,5 +51,3 @@ while digite != 0:
         print('Até a próxima!')
     else:
         print("Essa opção não existe! Tente novamente!")
-
-
