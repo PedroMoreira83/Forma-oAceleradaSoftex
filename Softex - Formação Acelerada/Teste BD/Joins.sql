@@ -18,3 +18,4 @@ select * from produtos right join itensvenda itensvenda4 ON itensvenda4.id_produ
 
 select * from produtos INNER join itensvenda itensvenda5 ON itensvenda5.id_produtos = produtos.id
 
+select * from produtos outer join itensvenda itensvenda5 ON itensvenda5.id_produtos = produtos.id
