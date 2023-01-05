@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORTA = 8888;
+const PORTA = 8080;
 
 let livros = [];
 
