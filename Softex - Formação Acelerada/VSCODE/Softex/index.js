@@ -6,22 +6,18 @@ var app = express();
 
 app.listen(8080);
 
-app.get('/', (request, response) => {
-  return response.send('Olá Mundo!');
-});
-
-app.get('/user', (request, response) => {
-  return response.send('Hello World!');
+app.get('/', (req, res) => {
+  return res.send('Recebi uma solicitação HTTP GET');
 });
 
 app.post('/', function (req, res) {
-  return res.send('Got a POST request');
+  return res.send('Recebi uma solicitação HTTP POST');
 });
 
-app.put('/user', function (req, res) {
-  res.send('Got a PUT request at /user');
+app.put('/', function (req, res) {
+  res.send('Recebi uma solicitação HTTP PUT');
 });
 
-app.delete('/user', function (req, res) {
-  res.send('Got a DELETE request at /user');
+app.delete('/', function (req, res) {
+  res.send('Recebi uma solicitação HTTP DELETE');
 });
