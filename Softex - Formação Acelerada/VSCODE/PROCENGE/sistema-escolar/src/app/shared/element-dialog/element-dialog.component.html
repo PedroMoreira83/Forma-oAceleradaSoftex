@@ -1,0 +1,42 @@
+<h1 *ngIf="!isChange" mat-dialog-title>Incluir</h1>
+<h1 *ngIf="isChange" mat-dialog-title>Editar</h1>
+<div mat-dialog-content class="container">
+  <mat-form-field appearance="fill">
+    <mat-label>Codigo</mat-label>
+    <input matInput [(ngModel)]="data.position" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="data.nome" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Instrutor</mat-label>
+    <input matInput [(ngModel)]="data.instrutor" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Local</mat-label>
+    <input matInput [(ngModel)]="data.local" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Carga Horaria</mat-label>
+    <input matInput [(ngModel)]="data.cargaHoraria" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Data Inicio</mat-label>
+    <input matInput [(ngModel)]="data.dataInicio" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button
+    mat-button
+    *ngIf="!isChange"
+    [mat-dialog-close]="data"
+    cdkFocusInitial
+  >
+    Incluir
+  </button>
+  <button mat-button *ngIf="isChange" [mat-dialog-close]="data" cdkFocusInitial>
+    Editar
+  </button>
+  <button mat-button (click)="cancelar()">Cancelar</button>
+</div>
